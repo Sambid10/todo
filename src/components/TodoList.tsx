@@ -4,6 +4,8 @@ import { Link, Route, Routes, useLocation } from "react-router-dom";
 import ShowAllPage from "../pages/ShowAllPage";
 import ShowCompletePage from "../pages/ShowCompletePage";
 import ShowInCompletePage from "../pages/ShowIncompletePage";
+
+
 export type Todo = {
   id: number;
   desc: string;
@@ -13,6 +15,7 @@ export type Todo = {
 export default function TodoList() {
   const location = useLocation();
   const ismainpage = location.pathname === "/";
+  
   const ref = useRef<HTMLTextAreaElement>(null);
   const [todos, setTodos] = useState<Todo[]>([]);
   // const [filter, setFilter] = useState<"all" | "completed" | "incomplete">("all");
@@ -62,13 +65,13 @@ export default function TodoList() {
       )}
 
       <div className="btnsconatiner justify-center">
-        <Link to="/showall" className="bg-black px-2 py-2 rounded-xl">
+        <Link to="/showall" className="bg-gray-100 px-2 py-2 rounded-xl">
           Show All
         </Link>
-        <Link to="/showcomplete" className="bg-black px-2 py-2 rounded-xl">
+        <Link to="/showcomplete" className="bg-gray-100 px-2 py-2 rounded-xl">
           Show Completed
         </Link>
-        <Link to="/showincomplete" className="bg-black px-2 py-2 rounded-xl">
+        <Link to="/showincomplete" className="bg-gray-100 px-2 py-2 rounded-xl">
           Show Incomplete
         </Link>
       </div>

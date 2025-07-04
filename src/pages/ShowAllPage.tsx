@@ -11,14 +11,13 @@ export default function ShowAllPage({todos,onDelete,onEdit,onToggle}:{
   return (
     <div className='flex flex-col gap-4'>
       {todos.map((todo)=>
-      
         <TodoItems
+        key={todo.id}
         onDelete={onDelete}
         onEdit={onEdit}
         onToggle={onToggle}
         todo={todo}
         />
-      
       )}
     </div>
   )

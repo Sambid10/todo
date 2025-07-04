@@ -16,6 +16,7 @@ export default function ShowInCompletePage({todos,onDelete,onEdit,onToggle}:{
         onEdit={onEdit}
         onToggle={onToggle}
         todo={todo}
+        key={todo.id}
         />
       )}
     </div>
