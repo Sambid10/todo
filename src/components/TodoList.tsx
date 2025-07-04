@@ -24,6 +24,7 @@ export default function TodoList() {
     console.log(todos);
   }, [todos]);
 
+  
   const handleAdd = () => {
     const text = ref.current?.value;
     if (text) {
@@ -88,6 +89,8 @@ export default function TodoList() {
             />
           }
         />
+
+
         <Route
           path="/showcomplete"
           element={
@@ -112,6 +115,8 @@ export default function TodoList() {
           }
         />
       </Routes>
+
+
     </div>
   );
 }

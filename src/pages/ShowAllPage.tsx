@@ -1,4 +1,3 @@
-
 import type { Todo } from '../components/TodoList'
 import TodoItems from '../components/TodoItems'
 
