@@ -1,0 +1,61 @@
+.textarea {
+    border-radius: 12px;
+    border: 1px solid gainsboro;
+    min-height: 8em;
+    padding: 8px 14px;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 35px;
+    padding:12px;
+}
+
+.todocontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.todolistcontainer {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    padding: 12px 12px;
+    align-items: center;
+    border-radius: 12px;
+    height: 4em;
+
+}
+
+.deletebtn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    padding: 0px
+}
+.deletebtn:focus{
+    outline: none;
+}
+
+
+.savebtn {
+    background-color: transparent;
+    border: none;
+    color: greenyellow;
+    padding: 0px;
+    outline: none;
+}
+.savebtn:focus{
+    outline: none;
+}
+
+.btnsconatiner{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}

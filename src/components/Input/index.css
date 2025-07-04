@@ -1,0 +1,13 @@
+.in {
+  height: 2em;
+  outline: none;
+  border-radius: 99px;
+  border: 1px solid white;
+  padding-left: 12px;
+  background-color: transparent; /* or any desired color */
+  color: inherit; /* inherit text color if needed */
+}
+
+.in:focus {
+  border: 1px solid wheat;
+}
